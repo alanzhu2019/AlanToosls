@@ -1,2 +1,4 @@
-package com.alan.service;public class Test {
+package com.alan.service;
+
+public class Test {
 }
