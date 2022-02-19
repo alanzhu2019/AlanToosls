@@ -40,6 +40,15 @@ public class ArraysTest {
         System.out.println(Arrays.toString(books));
 
 
+        int[] ints1 = {10,6,666};
+        System.out.println(Arrays.toString(ints1));
+
+        System.out.println("==============");
+
+        int[] tt =  Arrays.copyOf(ints1,ints1.length);
+
+        Arrays.sort(tt);
+        System.out.println(Arrays.toString(tt));
 
 
     }
