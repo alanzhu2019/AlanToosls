@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class HomeWork01 {
 
     public static void main(String[] args) {
-        int start = 0;
+        int start ;
         int end = 0;
 
         System.out.println("字符串反转：除首位部分其余颠倒（例：“abcdef” 反转后“aedcbf”）");
@@ -57,5 +57,5 @@ public class HomeWork01 {
 
         return replace.toString();
 
-    };
+    }
 }
