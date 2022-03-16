@@ -1,0 +1,15 @@
+2022.03.16 at 21:47:19 CST DEBUG com.alan.service.Test 18 main - 测试
+2022.03.16 at 21:47:19 CST ERROR com.alan.service.Test 19 main - error
+2022.03.16 at 21:47:19 CST INFO  com.alan.service.Test 20 main - info
+2022.03.16 at 21:47:19 CST WARN  com.alan.service.Test 21 main - warn
+2022.03.16 at 21:47:19 CST DEBUG com.alan.service.Test 27 main - 输出：[pp, alan]
+2022.03.16 at 22:08:53 CST DEBUG com.alan.service.Test 20 main - 测试
+2022.03.16 at 22:08:53 CST ERROR com.alan.service.Test 21 main - error
+2022.03.16 at 22:08:53 CST INFO  com.alan.service.Test 22 main - info
+2022.03.16 at 22:08:53 CST WARN  com.alan.service.Test 23 main - warn
+2022.03.16 at 22:08:53 CST DEBUG com.alan.service.Test 29 main - 输出：[pp, alan]
+2022.03.16 at 22:14:39 CST DEBUG com.alan.service.Test 20 main - 测试
+2022.03.16 at 22:14:39 CST ERROR com.alan.service.Test 21 main - error
+2022.03.16 at 22:14:39 CST INFO  com.alan.service.Test 22 main - info
+2022.03.16 at 22:14:39 CST WARN  com.alan.service.Test 23 main - warn
+2022.03.16 at 22:14:39 CST DEBUG com.alan.service.Test 29 main - 输出：[pp, alan]

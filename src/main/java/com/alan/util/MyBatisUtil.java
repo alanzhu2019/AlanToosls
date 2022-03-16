@@ -15,7 +15,7 @@ public class MyBatisUtil {
     static {
         try {
             // 读取配置文件
-            InputStream in = Resources.getResourceAsStream("mybatis-config.xml");
+            InputStream in = Resources.getResourceAsStream("mybatis/mybatis-config.xml");
             // 创建 SqlSessionFactory 对象
             factory = new SqlSessionFactoryBuilder().build(in);
         } catch (Exception e) {

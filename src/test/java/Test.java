@@ -1,5 +1,8 @@
 import com.alan.bean.Nabfusers;
-import com.alan.dao.NabfUsersDao;
+
+import com.alan.controller.UserController;
+import com.alan.dao.NabfUserDao;
+import com.alan.util.MyBatisUtil;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -8,17 +11,26 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
+
+
 import java.util.List;
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) throws IOException {
 
-        //System.out.printf("输入用户名：");
-        //Scanner scanner = new Scanner(System.in);
-        //String userid = scanner.next();
-        Test test = new Test();
-        test.testUser();
+        System.out.printf("输入用户名：");
+        Scanner scanner = new Scanner(System.in);
+        String userid = scanner.next();
+
+        UserController user = new UserController();
+        List<Nabfusers> users = user.getUsers(userid);
+        for (Nabfusers us:users){
+            System.out.println(us);
+        }
+
+        //Test test = new Test();
+       // test.testUser();
     }
 
     public void testUser() throws IOException {
@@ -29,11 +41,11 @@ public class Test {
         // 3.获取 SqlSession 对象
         SqlSession session = factory.openSession();
         // 4.使用 SqlSession 创建 Dao 接口的代理对象
-        NabfUsersDao userDao = session.getMapper(NabfUsersDao.class);
+      //  NabfUsersDao userDao = session.getMapper(NabfUsersDao.class);
         // 5.执行接口的方法
-        List<Nabfusers> userList = userDao.gitUsers200();
-        userList.forEach(user ->{
-            System.out.println(user);
-        });
+        //List<Nabfusers> userList = userDao.gitUsers200();
+      //  userList.forEach(user ->{
+         ///   System.out.println(user);
+     //   });
     }
 }

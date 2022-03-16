@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.alan.dao.NabfUsersDao">
+<mapper namespace="com.alan.dao.NabfUserDao">
 
 <resultMap id="baseNabfusers" type="com.alan.bean.Nabfusers">
     <result property="userName" column="USER_NAME"/>
@@ -20,14 +20,21 @@
         select * from NABFUSERS  limit 100
     </select>
 
+    <select id="isUserExist" resultType="java.lang.Integer" parameterType="string">
+        select count(*) from NABFUSERS where user_id=#{userId}
+    </select>
+
 
     <insert id="addUser" >
-        insert into
+        insert into NABFUSERS(User_id)
 
     </insert>
 
 
+    <update id="updateUser"></update>
 
+
+    <delete id="deleteUser"></delete>
 
 
 </mapper>
